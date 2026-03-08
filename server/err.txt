@@ -1,0 +1,12 @@
+✅ MongoDB Connected
+🗑️  Cleared existing products, reviews, and coupons
+🛍️  5 products seeded
+🎟️  3 coupons seeded
+👤 Admin user created
+
+✨ Database seeded successfully!
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Admin Login:
+  Email: admin@vertex.com
+  Password: Admin@123456
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

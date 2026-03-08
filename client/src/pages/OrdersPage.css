@@ -1,0 +1,93 @@
+.orders-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.order-card {
+    padding: 24px;
+    animation: fadeIn 0.4s ease;
+    transition: all var(--transition-fast);
+}
+
+.order-card:hover {
+    border-color: var(--gold);
+    transform: scale(1.01);
+}
+
+.order-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.order-card__id {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--gold);
+}
+
+.order-card__date {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.order-card__status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.875rem;
+}
+
+.order-card__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.order-card__items-preview {
+    display: flex;
+    gap: 8px;
+    flex: 1;
+    overflow-x: auto;
+    padding-bottom: 4px;
+}
+
+.order-card__item img {
+    width: 48px;
+    height: 48px;
+    border-radius: var(--radius-sm);
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+}
+
+.order-card__info {
+    text-align: right;
+}
+
+.order-card__total {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.order-card__payment {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+    .order-card__body {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .order-card__info {
+        text-align: left;
+    }
+}
